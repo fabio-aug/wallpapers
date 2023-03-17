@@ -1,16 +1,16 @@
 # 📷 Wallpapers
 
-## 📃 Sobre
+## 📃 About
 
-Repositório destinado ao armazenamento da minha coleção de wallpapers escolhidos a dedo para o uso diário e pessoal. Meu objetivo é aos poucos ir substituindo todas imagens com criações próprias.
+Repository for my hand-picked collection of wallpapers for personal and daily use. My goal is to gradually replace all images with my own creations.
 
 ## 🔧 Script
 
-O repositório conta com um script bem simples em python3 destinado a renomeação em massa dos arquivos de forma provisória. Para executar com sucesso basta editar a linha 3 colando o endereço da pasta de imagens.
+The repository has a very simple python3 script to provisionally rename files en masse. To run it successfully just edit line 3 by pasting the address of the image folder.
 
-## 📌 Créditos
+## 📌 Credits
 
-Todas as imagens foram encontradas nos seguintes sites:
+All images were found on the following websites:
 
 - [unsplash](https://unsplash.com/pt-br)
 
