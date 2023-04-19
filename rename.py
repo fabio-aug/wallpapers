@@ -1,22 +1,28 @@
+""" Script for rename files """
 import os
 
-path = '<wallpaper_folder>'
+# Path folder images
+PATH = './images'
 
-files = os.listdir(path)
 
+def rename_file(name, file_data):
+    """ Function get file types and create new name """
+
+    old_name = file_data.split(".")
+    return name + '.' + old_name[len(old_name) - 1]
+
+
+files = os.listdir(PATH)
 for index, file in enumerate(files):
-    name = str(index + 1)
+    temp_name = rename_file(str(index + 1), file)
+    os.rename(os.path.join(PATH, file), os.path.join(PATH, temp_name))
 
-    for i in range(0, (4 - len(name)), 1):
-        name = "0" + name
+files = os.listdir(PATH)
+for index, file in enumerate(files):
+    new_name = str(index + 1)
 
-    oldName = file.split(".")
+    for i in range(0, (4 - len(new_name)), 1):
+        new_name = "0" + new_name
 
-    name = name + '.' + oldName[len(oldName) - 1]
-
-    print(name)
-    print(''.join([str(index), '.jpg']) + "\n")
-
-    os.rename(os.path.join(path, file), os.path.join(path, name))
-
-exit()
+    final_name = rename_file(new_name, file)
+    os.rename(os.path.join(PATH, file), os.path.join(PATH, final_name))
