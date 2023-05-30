@@ -21,5 +21,3 @@ All images were found on the following websites:
 - [reddit/unixporn](https://www.reddit.com/r/unixporn/)
 
 - [uhd wallpaper](https://www.uhdpaper.com/)
-
-
